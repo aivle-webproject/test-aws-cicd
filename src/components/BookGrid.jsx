@@ -10,7 +10,7 @@ function BookGrid() {
     useEffect(() => {
         const fetchBooks = async () => {
             try {
-                const res = await axios.get("http://localhost:8080/api/books");
+                const res = await axios.get("http://43.203.210.226:3000/api/books");
                 setBooks(res.data);
             } catch (error) {
                 console.error(error);
