@@ -1,16 +1,61 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite + React</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS S3 배포 테스트</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+        }
+
+        h1 {
+            color: #2ecc71;
+            /* 성공을 상징하는 초록색 */
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            background-color: #e8f5e9;
+            color: #27ae60;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+    <div class="card">
+        <h1>🎉 배포 성공! 🎉</h1>
+        <h2>AWS S3 정적 웹 호스팅 테스트</h2>
+        <br>
+        <p>이 화면이 보인다면 <strong>버킷 정책(Bucket Policy)</strong>과<br>
+            <strong>퍼블릭 액세스 설정</strong>이 완벽하게 된 것입니다.
+        </p>
+        <p>현재 상태: <span class="highlight">정상 (Active)</span></p>
+    </div>
 </body>
 
 </html>
