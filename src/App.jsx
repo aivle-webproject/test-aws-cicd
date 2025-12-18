@@ -15,7 +15,7 @@ function App() {
   const [books, setBooks] = useState([]);
 
   // ★ 중요: 본인의 EC2 퍼블릭 IP로 변경하세요! (http:// 필수, 포트 3000 필수)
-  const API_URL = "http://3.36.115.225:3000";
+  const API_URL = "http://43.203.210.226:3000";
   // 1. 처음 실행될 때 EC2에서 책 목록 가져오기 (GET)
   useEffect(() => {
     fetch(`${API_URL}/books`)
