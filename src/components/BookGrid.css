@@ -1,6 +1,0 @@
-.book-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 64px 96px;
-    justify-items: center;
-}
