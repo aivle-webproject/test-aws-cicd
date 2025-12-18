@@ -19,10 +19,10 @@ body {
 
 /* ✅ 나머지는 있어도 되고 없어도 되는 스타일 */
 h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
+  font-size: 3.2em;
+  line-height: 1.2;
 }
 
 .card {
-    padding: 2em;
+  padding: 2em;
 }
