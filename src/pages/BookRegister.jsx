@@ -90,7 +90,7 @@ function BookRegister() {
     const handleSubmit = async () => {
         try {
             await axios.post(
-                `http://43.203.210.226:3000/api/books/${user.id}`,
+                `http://3.36.115.225:8080/api/books/${user.id}`,
                 {
                     title,
                     content,

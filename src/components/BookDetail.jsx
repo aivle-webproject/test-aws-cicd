@@ -71,7 +71,7 @@ function BookDetail() {
         const fetchBook = async () => {
             try {
                 const res = await axios.get(
-                    `http://43.203.210.226:3000/api/books/${bookId}`
+                    `http://3.36.115.225:8080/api/books/${bookId}`
                 );
                 setBook(res.data);
             } catch (error) {
@@ -91,7 +91,7 @@ function BookDetail() {
 
         try {
             await axios.delete(
-                `http://43.203.210.226:3000/api/books/${bookId}`
+                `http://3.36.115.225:8080/api/books/${bookId}`
             );
 
             alert("도서가 삭제되었습니다.");
@@ -106,7 +106,7 @@ function BookDetail() {
     const handleSave = async (updatedBook) => {
         try {
             const res = await axios.put(
-                `http://43.203.210.226:3000/api/books/${bookId}`,
+                `http://3.36.115.225:8080/api/books/${bookId}`,
                 updatedBook
             );
             setBook(res.data);        // 화면 즉시 반영
