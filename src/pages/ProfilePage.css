@@ -1,0 +1,213 @@
+/* 전체 컨테이너: 사이드바 오른쪽 영역을 넓게 사용 */
+.profile-page {
+  width: 100%;
+  max-width: none;
+  margin: 24px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+/* 헤더 - 왼쪽 상단 고정 */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profile-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.profile-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* 카드들을 세로로 한 줄 정렬 */
+.profile-column {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* 공통 카드 스타일 */
+.profile-card,
+.profile-detail-box,
+.account-card {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.06);
+  padding: 20px 24px;
+}
+
+/* 1. 프로필 카드 */
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.profile-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f9fafb;
+  font-size: 32px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profile-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.profile-date {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* 2. 독서 요약 카드 */
+.detail-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.summary-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+}
+
+.summary-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.summary-label {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+/* 3. 계정 설정 카드 */
+.account-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.account-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.account-desc {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* 버튼 묶음 */
+.account-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* 비밀번호/닉네임 변경 공통 버튼 */
+.setting-btn {
+  width: 100%;
+  padding: 12px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.15s ease, border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.setting-btn:hover {
+  background: #e2e8f0;
+  border-color: #cbd5e1;
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.12);
+}
+
+/* 버튼 왼쪽 아이콘 (이지) */
+.btn-icon {
+  width: 20px;
+  text-align: center;
+}
+
+/* 위험 영역 구분 */
+.danger-group {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #fee2e2;
+}
+
+/* 계정 삭제 버튼 */
+.danger-btn {
+  width: 100%;
+  padding: 12px;
+  background: #fee2e2;
+  border: 1px solid #fca5a5;
+  border-radius: 12px;
+  text-align: left;
+  color: #b91c1c;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.15s ease, border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.danger-btn:hover {
+  background: #fecaca;
+  border-color: #f87171;
+  box-shadow: 0 6px 14px rgba(248, 113, 113, 0.25);
+}
+
+/* 반응형 */
+@media (max-width: 769px) {
+  .profile-page {
+    margin: 16px;
+  }
+
+  .profile-column {
+    max-width: 100%;
+  }
+}
